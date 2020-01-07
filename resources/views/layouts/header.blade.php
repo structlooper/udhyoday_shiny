@@ -13,11 +13,14 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-          <!-- <a href="login.php" clas="userLogin"><i class="fa fa-user-circle"></i></a> -->
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="weather"><div id="temp"></div><div id="minutely"></div><i class="fas fa-cloud"></i></a>
+          <a href="#" class="login">Login <i class="fas fa-user-circle"></i></a>
+          <a href="/donateUs" class="donate">Donate <i class="fas fa-donate"></i></a>
+
         </div>
       </div>
     </div>
@@ -27,7 +30,6 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <h1 class="text-light"><a href="index.php" class="scrollto"><img src="img/mag_logo_sp.png"><span>&nbsp;Udhyoday</span></a></h1>
-        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -35,25 +37,36 @@
           <li class="active"><a href="#intro">Home</a></li>
           <li class="drop-down"><a href="">Farms</a>
             <ul>
-              <li><a href="#">testing</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
+
+              {{-- rabi crops --}}
+              <li class="drop-down"><a href="#">Rabi Crops</a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#">Wheat</a></li>
+                  <li><a href="#">Pea</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+
+              {{-- Zaid crops --}}
+              <li class="drop-down"><a href="#">Zaid Crops</a>
+                <ul>
+                  <li><a href="#">Rice</a></li>
+                  <li><a href="#">Maize</a></li>
+                </ul>
+              </li>
+
+              {{-- kharif crops --}}
+              <li class="drop-down"><a href="#">Kharif Crops</a>
+                <ul>
+                  <li><a href="#">Soyabean</a></li>
+                  <li><a href="#">Cotton</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#footer">Contact Us</a></li>
-          <li class="loginBtn ls btn btn-light"><a href="login.php">Login <i class="fa fa-user-circle"></i></a></li>
+          <li><a href="#portfolio">About</a></li>
+          <li><a href="#team">Market</a></li>
+          <li><a href="#footer">support</a></li>
+          {{-- <li class="loginBtn ls btn btn-light"><a href="login.php">Login <i class="fa fa-user-circle"></i></a></li> --}}
         </ul>
       </nav><!-- .main-nav -->
 

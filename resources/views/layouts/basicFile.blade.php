@@ -24,6 +24,9 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+        <!-- fontaesome file -->
+  <script src="https://kit.fontawesome.com/4cd0f195bd.js" crossorigin="anonymous"></script>
+
         <!-- Main Stylesheet File -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/myStyle.css" rel="stylesheet">
@@ -42,6 +45,37 @@
                 evt.currentTarget.className += " active";
             }
         </script>
+{{--  Weather api for general wheather. --}}
+{{-- <!-- for weahter prediction with auto locaiton  --> --}}
+<script>
+    function weather() {
+    
+      var location = document.getElementById("location");
+      var apiKey = 'a75a39c3d635c5c43f461a23b0d0037b'; // PLEASE SIGN UP FOR YOUR OWN API KEY
+      var url = 'https://api.forecast.io/forecast/';
+    
+      navigator.geolocation.getCurrentPosition(success, error);
+    
+      function success(position) {
+        latitude = position.coords.latitude;
+        longitude = position.coords.longitude;
+    
+         $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
+             temp_f = data.currently.temperature;
+             temp_c = (temp_f - 32)*(5/9);
+             temp_c_roundOff = Math.round(temp_c * 100) / 100;
+          $('#temp').html(temp_c_roundOff + '° c');
+          $('#minutely').html(data.minutely.summary);
+        });
+      }
+    
+      function error() {
+        location.innerHTML = "Unable to retrieve your location";
+      }
+    
+    }
+    weather();
+</script>
     </head>
     <body>
         <!-- JavaScript Libraries -->

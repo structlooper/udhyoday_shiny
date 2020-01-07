@@ -71,9 +71,14 @@
                 </div>
             </div>
         </nav>
-
+         {{-- login pannel calling --}}
         <main class="py-4">
-            @yield('content')
+            @yield('content_login')
+        </main>
+
+        {{-- registeraiton pannel calling --}}
+        <main class="py-4">
+            @yield('content_register')
         </main>
     </div>
 </body>

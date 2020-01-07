@@ -130,7 +130,8 @@
 
 
 
-  // custom made
+  // Weather api for general wheather.
+  
 
 })(jQuery);
 

@@ -2,12 +2,10 @@
 
 @extends('layouts.footer')
 @extends('layouts.header')
-
+@extends('layouts.basicFile')
 @section('header')
-
-
 <html lang="en">
-<head>
+{{-- <head>
   <meta charset="utf-8">
   <title>Udhyoday - Home</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -48,7 +46,7 @@
         evt.currentTarget.className += " active";
       }
   </script>
-</head>
+</head> --}}
 
 <body>
   <!-- news update marquee -->
