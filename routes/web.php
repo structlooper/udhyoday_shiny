@@ -19,3 +19,6 @@ route::get('/','indexContrller@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/donateUs', 'DonateController@view')->name('DonatePage');
+Route::post('/donating', 'DonateController@store')->name('donating');
+Route::post('/paytm-callback','DonateController@paytmCallback')->name('paytm-callback');
