@@ -15,3 +15,7 @@
 //     return view('welcome');
 // });
 route::get('/','indexContrller@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

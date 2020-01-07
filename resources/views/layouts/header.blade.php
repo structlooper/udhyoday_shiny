@@ -33,9 +33,9 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
-          <li class="drop-down"><a href="">Crops</a>
+          <li class="drop-down"><a href="">Farms</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">testing</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
