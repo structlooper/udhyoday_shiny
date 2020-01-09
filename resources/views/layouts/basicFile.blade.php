@@ -2,6 +2,15 @@
 <!-- all the CSS files and js files and lib goes here!! -->
 <html>
     <head>
+        <style>
+            .farmer-logo-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+            top:-6px;
+          }
+          </style>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
@@ -30,21 +39,6 @@
         <!-- Main Stylesheet File -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/myStyle.css" rel="stylesheet">
-        <script>
-            function openTabs(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityNamev   ).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script>
 {{--  Weather api for general wheather. --}}
 {{-- <!-- for weahter prediction with auto locaiton  --> --}}
 <script>

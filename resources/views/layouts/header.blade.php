@@ -17,7 +17,14 @@
           <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
           <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
           <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="weather"><div id="temp"></div><div id="minutely"></div><i class="fas fa-cloud"></i></a>
+          <a href="/forcast" class="weather"><div id="temp"></div><div id="minutely"></div><i class="fas fa-cloud"></i></a>
+          <a href="#" class="toggle">
+            <div class="button r" id="button-1">
+            <input type="checkbox" class="checkbox">
+            <div class="knobs"></div>
+            <div class="layer"></div>
+          </div>
+        </a>
           <a href="#" class="login">Login <i class="fas fa-user-circle"></i></a>
           <a href="/donateUs" class="donate">Donate <i class="fas fa-donate"></i></a>
 
@@ -66,6 +73,7 @@
           <li><a href="#portfolio">About</a></li>
           <li><a href="#team">Market</a></li>
           <li><a href="#footer">support</a></li>
+          <li><a href="#footer">Faq</a></li>
           {{-- <li class="loginBtn ls btn btn-light"><a href="login.php">Login <i class="fa fa-user-circle"></i></a></li> --}}
         </ul>
       </nav><!-- .main-nav -->
