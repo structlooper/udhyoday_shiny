@@ -12,4 +12,12 @@ class indexContrller extends Controller
     function farms(){
       return view('farms');
     }
+    function support()
+    {
+      return view('help');
+    }
+    function market()
+    {
+      return view('market');
+    }
 }

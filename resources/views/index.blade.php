@@ -16,7 +16,7 @@
         <div class="col-md-6 intro-info order-md-first order-last">
           <h2>All Agriculture Solutions<br>for <span>Farmers!</span></h2>
           <div class = "btn-to-contact">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#services" class="btn-get-started scrollto">Let's Farm</a>
           </div>
         </div>
   

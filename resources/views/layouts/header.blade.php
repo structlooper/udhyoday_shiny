@@ -4,6 +4,7 @@
 @section('content')
 
 <html>
+  
     <body>
   <!--==========================
   Header
@@ -25,13 +26,14 @@
             <div class="layer"></div>
           </div>
         </a> --}}
+        <a href="/homeT">हिंदी </a>
           @guest
-          <a class="login" href="{{ route('login') }}">{{ __('Login') }}<i class="fas fa-user-circle"></i></a>
+          <a class="login" href="{{ route('login') }}">{{ __('Login') }}  <i class="fas fa-user-circle"></i></a>
           {{-- <li class="nav-item">
           </li> --}}
           @if (Route::has('register'))
               {{-- <li class="nav-item"> --}}
-                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}<i class="fas fa-user-circle"></i></a>
+                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}  <i class="fas fa-user-circle"></i></a>
               {{-- </li> --}}
           @endif
       @else
@@ -100,8 +102,8 @@
             </ul>
           </li>
           <li><a href="#about">About</a></li>
-          <li><a href="#team">Market</a></li>
-          <li><a href="#">support</a></li>
+          <li><a href="/market">Market</a></li>
+          <li><a href="/support">support</a></li>
           <li><a href="#faq">Faq</a></li>
           {{-- <li class="loginBtn ls btn btn-light"><a href="login.php">Login <i class="fa fa-user-circle"></i></a></li> --}}
         </ul>

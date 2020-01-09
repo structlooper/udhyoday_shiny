@@ -20,8 +20,13 @@ Auth::routes();
 
 Route::get('/home', 'indexContrller@index')->name('home');
 route::get('/farms','indexContrller@farms')->name('farms');
+route::get('/support','indexContrller@support')->name('support');
+route::get('/market','indexContrller@market')->name('market');
 
 // donation routess
 Route::get('/donateUs', 'DonateController@view')->name('DonatePage');
 Route::post('/donating', 'DonateController@store')->name('donating');
 Route::post('/paytm-callback','DonateController@paytmCallback')->name('paytm-callback');
+
+// translated pages
+Route::get('/homeT',"translatedController@view")->name('homeHindi');
