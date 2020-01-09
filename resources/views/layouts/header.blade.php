@@ -18,7 +18,7 @@
           <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
           <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
           <a href="/forcast" class="weather"><div id="temp"></div><div id="minutely"></div><i class="fas fa-cloud"></i></a>
-          <a href="#" class="toggle">
+          <a href="/farms" class="toggle">
             <div class="button r" id="button-1">
             <input type="checkbox" class="checkbox">
             <div class="knobs"></div>
