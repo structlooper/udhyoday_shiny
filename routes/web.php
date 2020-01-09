@@ -18,4 +18,10 @@ route::get('/','indexContrller@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'indexContrller@index')->name('home');
+route::get('/farms','indexContrller@farms')->name('farms');
+
+// donation routess
+Route::get('/donateUs', 'DonateController@view')->name('DonatePage');
+Route::post('/donating', 'DonateController@store')->name('donating');
+Route::post('/paytm-callback','DonateController@paytmCallback')->name('paytm-callback');

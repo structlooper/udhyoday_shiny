@@ -25,7 +25,8 @@
             <div class="layer"></div>
           </div>
         </a>
-          <a href="#" class="login">Login <i class="fas fa-user-circle"></i></a>
+          <a href="/login" class="login">Login <i class="fas fa-user-circle"></i></a>
+          <a href="/register" class="register">Register <i class="fas fa-user-circle"></i></a>
           <a href="/donateUs" class="donate">Donate <i class="fas fa-donate"></i></a>
 
         </div>
@@ -36,44 +37,45 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="index.php" class="scrollto"><img src="img/mag_logo_sp.png"><span>&nbsp;Udhyoday</span></a></h1>
+      <h1 class="text-light"><a href="/home" class="scrollto"><img src="img/mag_logo_sp.png"><span>&nbsp;Udhyoday</span></a></h1>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
+          <li class="active"><a href="/home">Home</a></li>
           <li class="drop-down"><a href="">Farms</a>
             <ul>
 
               {{-- rabi crops --}}
               <li class="drop-down"><a href="#">Rabi Crops</a>
                 <ul>
-                  <li><a href="#">Wheat</a></li>
-                  <li><a href="#">Pea</a></li>
+                  <li><a href="/farms">Potato</a></li>
+                  <li><a href="/farms">wheat</a></li>
+                  <li><a href="/farms">Pea</a></li>
                 </ul>
               </li>
 
               {{-- Zaid crops --}}
               <li class="drop-down"><a href="#">Zaid Crops</a>
                 <ul>
-                  <li><a href="#">Rice</a></li>
-                  <li><a href="#">Maize</a></li>
+                  <li><a href="/farms">Rice</a></li>
+                  <li><a href="/farms">Maize</a></li>
                 </ul>
               </li>
 
               {{-- kharif crops --}}
               <li class="drop-down"><a href="#">Kharif Crops</a>
                 <ul>
-                  <li><a href="#">Soyabean</a></li>
-                  <li><a href="#">Cotton</a></li>
+                  <li><a href="/farms">Soyabean</a></li>
+                  <li><a href="/farms">Cotton</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="#portfolio">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#team">Market</a></li>
-          <li><a href="#footer">support</a></li>
-          <li><a href="#footer">Faq</a></li>
+          <li><a href="#">support</a></li>
+          <li><a href="#faq">Faq</a></li>
           {{-- <li class="loginBtn ls btn btn-light"><a href="login.php">Login <i class="fa fa-user-circle"></i></a></li> --}}
         </ul>
       </nav><!-- .main-nav -->

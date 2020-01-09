@@ -1,10 +1,10 @@
-@extends('layouts.app')
-@extends('layouts.basicFile')
-@section('content')
+@extends('layouts.footer')
+@extends('layouts.header')
+
+@section('header')
     
 @endsection
-@section('content_register')
-<div class="container">
+<div class="container" style="padding: 120px 0">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -77,4 +77,6 @@
         </div>
     </div>
 </div>
+@section('footer_content')
+    
 @endsection

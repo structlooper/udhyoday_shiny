@@ -9,4 +9,7 @@ class indexContrller extends Controller
     function index(){
       return view('index');
     }
+    function farms(){
+      return view('farms');
+    }
 }

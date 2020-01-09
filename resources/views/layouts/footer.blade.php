@@ -14,10 +14,8 @@
               <div class="col-lg-6">
                 <div class="footer-info">
                   <h3>Udhyoday</h3>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-                    donna
-                    mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat
-                    consequat mauris nunc congue.</p>
+                  <p>Udhyoday is an initiative toward the growth of agriculture sector in India.  We are here to help you in all the activities related to your farming. 
+                    This portal provides guidelines to support farmers better in many areas like crop rotation and protection, irrigation techniques, better storage, and identifying suitable crops for increasing income.</p>
                 </div>
               </div>
               <div class="col-lg-3">
@@ -37,11 +35,10 @@
                 <div class="footer-links">
                   <h4>Contact Us</h4>
                   <p>
-                    A108 Adam Street <br>
-                    New York, NY 535022<br>
-                    United States <br><br>
-                    <strong>Phone:</strong> +1 5589 55488 55<br>
-                    <strong>Email:</strong> info@example.com<br>
+                    53 Dakers' lane<br>
+                    India <br><br>
+                    <strong>Phone:</strong> <a href="tel:9582384151">9582384151</a><br>
+                    <strong>Email:</strong> udhyoday@gmail.com<br>
                   </p>
                 </div>
                 <div class="social-links">
