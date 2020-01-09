@@ -18,16 +18,43 @@
           <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
           <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
           <a href="/forcast" class="weather"><div id="temp"></div><div id="minutely"></div><i class="fas fa-cloud"></i></a>
-          <a href="/farms" class="toggle">
+          {{-- <a href="/farms" class="toggle">
             <div class="button r" id="button-1">
             <input type="checkbox" class="checkbox">
             <div class="knobs"></div>
             <div class="layer"></div>
           </div>
-        </a>
-          <a href="/login" class="login">Login <i class="fas fa-user-circle"></i></a>
-          <a href="/register" class="register">Register <i class="fas fa-user-circle"></i></a>
-          <a href="/donateUs" class="donate">Donate <i class="fas fa-donate"></i></a>
+        </a> --}}
+          @guest
+          <a class="login" href="{{ route('login') }}">{{ __('Login') }}<i class="fas fa-user-circle"></i></a>
+          {{-- <li class="nav-item">
+          </li> --}}
+          @if (Route::has('register'))
+              {{-- <li class="nav-item"> --}}
+                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}<i class="fas fa-user-circle"></i></a>
+              {{-- </li> --}}
+          @endif
+      @else
+          <a class="dropdown">
+              <a id="navbarDropdown" class="dropdown-toggle login" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  {{ Auth::user()->firstName }} &nbsp;<i class="fas fa-user-circle"></i>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-itemg" style="padding: 15px 50px;" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </div>
+          </a>
+      @endguest
+      <a href="/donateUs" class="donate">Donate <i class="fas fa-donate"></i></a>
+          {{-- <a href="/register" class="register">Register <i class="fas fa-user-circle"></i></a> --}}
 
         </div>
       </div>
