@@ -30,3 +30,7 @@ Route::post('/paytm-callback','DonateController@paytmCallback')->name('paytm-cal
 
 // translated pages
 Route::get('/homeT',"translatedController@view")->name('homeHindi');
+
+// dashboard
+route::get('/FarmerPotel','FarmerController@view');
+route::get('/AdminPortel','AdminController@view');

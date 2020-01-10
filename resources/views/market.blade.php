@@ -51,6 +51,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style-multigraph.css">
+<link rel="stylesheet" href="./style-responsive.css">
 <script>
             window.onload = function () {
                     var ctx = document.getElementById("canvas").getContext("2d");
@@ -89,18 +94,72 @@
     
      // Get the element with id="defaultOpen" and click on it
    document.getElementById("defaultOpen").click();
-</script> 
+</script>
+<style>
+
+    .farmer-logo-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        top: -6px;
+    }
+
+    #Crops{
+        display: block;
+    }
+
+    .agriTable{
+        padding: 100px 50px;
+    }
+    
+    .agriTable input{
+        padding: 10px;
+        font-size: 20px;
+    }
+       #box1{
+           padding: 50px;
+       }
+       #box1 h3{
+           padding: 20px;
+       }
+        #chartdiv {
+            /* padding: 50px; */
+            margin: auto;
+            width: 90%;
+            height: 295px;
+        }
+    
+</style> 
 </head>
 <body>
-    <div id="box1">
-        <div id="container" style="width: 100%; height:190px;">
-            <canvas id="canvas" style="display: block;width: 456px; max-height: 196px;"></canvas>
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+    window.__be = window.__be || {};
+    window.__be.id = "5e14d81428ddc20007074fbe";
+    (function() {
+        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+    })();
+</script>
+<!-- End of ChatBot code -->
+    <div id="box1" style="padding: 12% 0;">
+        <div class="container">
+            
+        <div class="clearfix"> </div>
         </div>
-        <button id="randomizeData">Randomize Data</button>
-        <button id="addDataset">Add Dataset</button>
-        <button id="removeDataset">Remove Dataset</button>
-        <button id="addData">Add Data</button>
-        <button id="removeData">Remove Data</button>
+
+
+
+        <div class="col-md-12 circuit swag wire-mdl">
+        <div class="ca-hea">
+            <h3>Growth of Farmers Using Column &amp; Line Graph</h3>
+        </div>
+        <div id="chartdiv"></div>
+        </div>
+
+    <div class="clearfix"> </div>
     </div>
     <div id="box2">
         <section id="services" class="section-bg">
@@ -603,6 +662,22 @@
             }
         }
     </script>
+   
+<script src="https://cdnjs.com/libraries/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- for amcharts js -->
+    <script src="./chartjs/pantomath.js"></script>
+    <script src="./chartjs/serial.js"></script>
+    
+    <!-- for amcharts js -->
+    
+    <script src="./chartjs/index1.js"></script>
+    
+    
+    <!--dynamic graph from 2nd file ends here-->
+    <div class="clearfix"> </div>
+
    
 <script src="https://cdnjs.com/libraries/Chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

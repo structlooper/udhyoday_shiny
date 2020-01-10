@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -26,7 +27,39 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected function redirectTo()
+    {
+        if (Auth::User()->userType == 'admin') 
+        {
+            return 'AdminPortel';
+        }
+        else
+        {
+            return 'FarmerPotel';
+            
+            // if (Auth::User()->status != 'pending') 
+            // {
+                
+            //     if(Auth::User()->profile == 'teacher')
+            //     {
+            //         return 'teacherPortel';
+            //     }
+            //     elseif(Auth::User()->profile == 'student')
+            //     {
+            //         return 'studentPortel';
+            //     }
+            // }
+            // else
+            // {   
+            // Auth::logout();
+            
+            // return ('/login');
+            
+            // }
+        }
+        
+    }
 
     /**
      * Create a new controller instance.

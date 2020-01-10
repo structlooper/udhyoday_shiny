@@ -1,0 +1,75 @@
+
+.circuit.swag {
+    width: 39%;
+padding: 0px;
+max-height: 425px;
+}
+.swag.wire-mdl {
+    margin: 0 0% 0% 1%;
+    width: 97%;
+}
+.stat {
+    padding-right: 0;
+}
+.stats-left {
+    float: left;
+    width: 70%;
+    background-color: #4F52BA;
+	text-align: center;
+	padding: 1em;
+}
+.wire-mdl .stats-left {
+    background-color: #585858;
+}
+.wire-mdl .stats-right {
+    background-color: rgba(88, 88, 88, 0.88);
+}
+.states-last .stats-left {
+    background-color: #e94e02;
+}
+.states-last .stats-right {
+    background-color: rgba(233, 78, 2, 0.84);
+}
+.stats-right {
+    float: right;
+    width: 30%;
+    text-align: center;
+	padding: 1.54em 1em;
+	background-color: rgba(79, 82, 186, 0.88);
+}
+.stats-left h5 {
+    color: #fff;
+    font-size: 1em;
+}
+.stats-left h4 {
+    font-size: 2em;
+    color: #fff;
+    margin-top: 10px;
+}
+.stats-right label {
+    font-size: 2em;
+    color: #fff;
+}
+/*--charts--*/
+.charts,.row {
+    margin: 0 0 1em 0;
+}
+.circuit {
+    background-color: #fff;
+    padding:1em;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+}
+.circuit canvas#bar {
+    width: 100% !important;
+}
+.charts canvas#line {
+    width: 100% !important;
+}
+h4.title {
+    font-size: 1.1em;
+    color: #444;
+    margin: 0.5em 0 1em;
+    text-transform: uppercase;
+}
